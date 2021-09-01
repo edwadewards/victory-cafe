@@ -1,78 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="victory.css">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
-  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Victory</title>
+  <link rel="stylesheet" href="victory.css">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+  <!-- font awesome icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css">
+
+  <title>Victory</title>
 </head>
 <body>
 
-	<header>
-		<h1 class="brand"><em>Victory</em></h1>
-		<ul class="nav-links">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Our Menus</a></li>
-			<li><a href="#">Blog Entries</a></li>
-			<li><a href="#">Contact Us</a></li>
-		</ul>
-	</header>
+  <header>
+    <div class="brand">
+      <h1><em>Victory</em></h1>
+    </div>
+    <div class="header-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our Menus</a></li>
+        <li><a href="#">Blog Entries</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
 
-	<section class="hero">
-		<div class="background-image" style="background-image: url(victory-pics/food.jpg);"></div>
-		<div class="hero-content">
-			<h6>Here you can eat delicious foods</h6>
-			<h1>Asian Restaurant</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis quam sed blandit dignissim. Praesent ac neque efficitur, blandit nisi.</p>
-			<button>Order Right Now</button>
-		</div>
-	</section>
+  <section class="hero">
+    <h4>Here you can eat delicious foods</h4>
+		<h1>Asian Restaurant</h1>
+		<p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis quam sed blandit dignissim. Praesent ac neque efficitur, blandit nisi.
+    </p>
+		<button class="hero-btn">Order Right Now</button>
+  </section>
+  
+  <section class="menu">
+    <div class="menu-place-order">
+      
+      <img src="victory-pics/menu1.jpg" width="360" height="240" class="menu-img menu-left-img">
 
-	<section class="menu">
-		<div class="page-one">
-			<img src="victory-pics/menu1.jpg" class="menu-img">
-			<div class="card">
-				<h1>We Cook Delicious</h1>
+      <div class="menu-contact-card">
+        <h2>We Cook Delicious</h2>
 				<div class="phone">
 					<h5>You Can Call Us On</h5>
-					<h1>+ 1234 567 8910</h1>
+					<h2>+ 1234 567 8910</h2>
 				</div>
 				<p>OR</p>
-				<button><strong>Order Now</strong></button>
-			</div>	
-			<img src="victory-pics/menu2.jpg" class="menu-img">
-		</div>
-		<div class="showcase">
-			<div>
-				<img src="victory-pics/menu-showcase1.jpg">
-				<h4>Breakfast</h4>
-			</div>
-			<div>
-				<img src="victory-pics/menu-showcase2.jpg">
-				<h4>Lunch</h4>
-			</div>
-			<div>
-				<img src="victory-pics/menu-showcase3.jpg">
-				<h4>Dinner</h4>
-			</div>
-			<div>
-				<img src="victory-pics/menu-showcase4.jpg">
-				<h4>Dessert</h4>
-			</div>
-		</div>
-		
-	</section>
+				<button class="menu-btn"><strong>Order Now</strong></button>
+      </div>  
 
-	<section class="reservations">
-		<div class="res-img" style="background-image: url(victory-pics/restaurant.jpg);"></div>
-		<div class="res-content">
-			<h2>Book Your Table Now</h2>
-			<div class="res-container">
-				<img src="victory-pics/rest2.jpg">
-				<div class="res-book">
-					<h2>Reservation</h2>
+        <img src="victory-pics/menu2.jpg" width="360" height="240" class="menu-img menu-right-img">
+      
+    </div>
+
+    <div class="menu-item-showcase">
+      <!-- circular images -->
+      <figure>
+        <img src="victory-pics/menu-showcase1.jpg" width="160" height="160" alt="picture of breakfast">
+        <figcaption>Breakfast</figcaption>
+      </figure>
+      <figure>
+        <img src="victory-pics/menu-showcase2.jpg" width="160" height="160" alt="picture of breakfast">
+        <figcaption>Lunch</figcaption>
+      </figure>
+      <figure>
+        <img src="victory-pics/menu-showcase3.jpg" width="160" height="160" alt="picture of breakfast">
+        <figcaption>Dinner</figcaption>
+      </figure>
+      <figure>
+        <img src="victory-pics/menu-showcase4.jpg" width="160" height="160" alt="picture of breakfast">
+        <figcaption>Dessert</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="reservations">
+    <h2>Book Your Table Now</h2>
+    <div class="reservation-container">
+      <img src="victory-pics/rest2.jpg" width="480" height="360" class="res-primary-img" alt="empty restaurant tables">
+      <div class="reservation-form">
+        <h3>Reservation</h3>
 					<form>
 						<label for="date">
 							<input type="date" name="date" placeholder="Select day">
@@ -89,107 +104,137 @@
 						<label for="party">
 							<input type="number" name="party" placeholder="Guests">
 						</label>
-						<button>Book Table</button>
+						<button class="reservation-btn">Book Table</button>
 					</form>
-				</div>
-			</div>
-		</div>
-		<div class="res-footer">
-			<h1>Get Application For Your Phone</h1>
-			<button><strong>Download Now</strong></button>
-		</div>
-	</section>
+      </div>
+    </div>
+    <footer class="reservation-footer">
+      <h2>Get Application For Your Phone</h2>
+			<button class="res-footer-btn">
+        <strong>Download Now</strong>
+      </button>
+    </footer>
+  </section>
 
-	<section class="specials">
-		<h1 class="title">Weekly Featured Food</h1>
-		<div class="features">
-			<div class="breakfast">
-				<h1 class="meal">Breakfast</h1>
-				<div class="card-container">
-					<img src="victory-pics/specials1.jpg">
-					<div class="price">$4.50</div>
-					<h3>Kale Chips Art Party</h3>
-					<p class="dammit">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a lacus consectetur, aliquam metus vitae, cursus.</p>
-				</div>
-			</div>
-			<div class="lunch">
-				<h1 class="meal">Lunch</h1>
-				<div class="card-container">
-					<img src="victory-pics/specials2.jpg">
-					<div class="price">$7.50</div>
-					<h3>Taiyaki Gastro Tousled</h3>
-					<p class="dammit">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a lacus consectetur, aliquam metus vitae, cursus.</p>
-				</div>
-			</div>
-			<div class="dinner">
-				<h1 class="meal">Dinner</h1>
-				<div class="card-container">
-					<img src="victory-pics/specials3.jpg">
-					<div class="price">$11.50</div>
-					<h3>Batch Squid Jean Shorts</h3>
-					<p class="dammit">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a lacus consectetur, aliquam metus vitae, cursus.</p>	
-				</div>
-			</div>
-		</div>
-	</section>
+  <section class="specials">
+    <h2>Weekly Featured Food</h2>
+    <div class="specials-featured">
+      <div class="specials-card breakfast">
+        <h3>Breakfast</h3>
+        <figure class="card-img">
+          <img src="victory-pics/specials1.jpg" alt="breakfast" class="fig-img" width="280" height="200">
+          <figcaption class="price">$4.50</figcaption>
+        </figure>
+        <h4>Kale Chips Art Party</h4>
+				<p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a lacus consectetur, aliquam metus vitae, cursus
+        </p>
+      </div>
 
-	<section class="blog">
-		<h1>Our Blog Post</h1>
-		<div class="divider">
-				<div class="blog-card">
-					<img src="victory-pics/blog1.jpg">
-					<div class="card-content">
-						<h1 class="blog-header">Stumptown Tofu Schlitz</h1>
-						<p>Branding / Admin</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan lacus quis tortor faucibus, quis fermentum felis viverra. Curabitur ultrices.</p>
-						<a href="#" class="blog-link">Continue Reading</a>
-					</div>	
-				</div>
-				<div class="blog-card">
-					<img src="victory-pics/blog2.jpg">
-					<div class="card-content">
-						<h1 class="blog-header">Succulents Hashtag Folk</h1>
-						<p>Branding / Admin</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan lacus quis tortor faucibus, quis fermentum felis viverra. Curabitur ultrices.</p>
-						<a href="#" class="blog-link">Continue Reading</a>
-					</div>	
-				</div>
-			</div>
-			<div class="divider">
-				<div class="blog-card">
-					<img src="victory-pics/blog3.jpg">
-					<div class="card-content">
-						<h1 class="blog-header">Knaus Sriracha Pinterest</h1>
-						<p>Dessert / Chef</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan lacus quis tortor faucibus, quis fermentum felis viverra. Curabitur ultrices.</p>
-						<a href="#" class="blog-link">Continue Reading</a>
-					</div>	
-				</div>
-				<div class="blog-card">
-					<img src="victory-pics/blog4.jpg">
-					<div class="card-content">
-						<h1 class="blog-header">Crucifix Selvage Coat</h1>
-						<p>Plate / Chef</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan lacus quis tortor faucibus, quis fermentum felis viverra. Curabitur ultrices.</p>
-						<a href="#" class="blog-link">Continue Reading</a>
-					</div>	
-				</div>
-			</div>
-		</div>
-	</section>
+      <div class="specials-card lunch">
+        <h3>Lunch</h3>
+        <figure class="card-img">
+          <img src="victory-pics/specials2.jpg" alt="lunch" class="fig-img" width="280" height="200">
+          <figcaption class="price">$7.50</figcaption>
+        </figure>
+        <h4>Taiyaki Gastro Tousled</h4>
+				<p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a lacus consectetur, aliquam metus vitae, cursus
+        </p>
+      </div>
 
-	<footer>
-		<div class="footer-img" style="background-image: url(victory-pics/rest2.jpg);"></div>
-		<div class="footer-content">
-			<h1>Signup for our newsletters</h1>
-			<form>
+      <div class="specials-card dinner">
+        <h3>Dinner</h3>
+        <figure class="card-img">
+          <img src="victory-pics/specials3.jpg" alt="dinner" class="fig-img" width="280" height="200">
+          <figcaption class="price">$11.50</figcaption>
+        </figure>
+        <h4>Batch Squid Jean Shorts</h4>
+				<p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a lacus consectetur, aliquam metus vitae, cursus
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog">
+    <h2>Our Blog Posts</h2>
+    <div class="blog-container">
+      <div class="blog-card">
+        <img src="victory-pics/blog1.jpg" width="280" height="220" alt="food" class="blog-card-img">
+      
+        <div class="blog-card-content">
+          <h3>Stumptown Tofu Schlitz</h3>
+					<p>Branding / Admin</p>
+					<p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan lacus quis tortor faucibus, quis fermentum felis viverra. Curabitur ultrices.
+          </p>
+					<a href="#">
+            Continue Reading
+          </a>
+        </div>
+      </div>  
+
+      <div class="blog-card">
+        <img src="victory-pics/blog2.jpg" width="280" height="220" alt="food" class="blog-card-img">
+        
+        <div class="blog-card-content">
+          <h3>Succulent Hashtag Folk</h3>
+          <p>Branding / Admin</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan lacus quis tortor faucibus, quis fermentum felis viverra. Curabitur ultrices.
+          </p>
+          <a href="#">
+            Continue Reading
+          </a>
+        </div>
+      </div>    
+
+      <div class="blog-card">
+        <img src="victory-pics/blog3.jpg" width="280" height="220" alt="food" class="blog-card-img">
+        
+        <div class="blog-card-content">
+          <h3>Knaus Sriracha Pinterest</h3>
+          <p>Dessert / Chef</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan lacus quis tortor faucibus, quis fermentum felis viverra. Curabitur ultrices.
+          </p>
+          <a href="#">
+            Continue Reading
+          </a>
+        </div>
+      </div>      
+
+      <div class="blog-card">
+        <img src="victory-pics/blog4.jpg" width="280" height="220" alt="food" class="blog-card-img">
+        
+        <div class="blog-card-content">
+          <h3>Crucifix Selvage Coax</h3>
+          <p>Plate / Chef</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan lacus quis tortor faucibus, quis fermentum felis viverra. Curabitur ultrices.
+          </p>
+          <a href="#">
+            Continue Reading
+          </a>
+        </div>
+      </div>        
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-signup">
+      <h2>Sign Up for our newsletter</h2>
+      <form>
 				<label for="email">
 					<input type="email" name="your-email" placeholder="Enter your email here...">
 				</label>
-				<button>Send Message</button>
+				<button class="footer-btn">
+          Send Message
+        </button>
 			</form>
-		</div>
-		<div class="footer-close">
+    </div>
+    <div class="footer-close">
 			<p>Copyright © 2017 Victory Template</p>
 			<ul class="social">
 				<li><i class="fab fa-facebook"></i></li>
@@ -200,7 +245,8 @@
 			</ul>
 			<p>Designed by <span>templatemo</span></p>
 		</div>
-	</footer>
+  </footer>
+
 
 </body>
 </html>
